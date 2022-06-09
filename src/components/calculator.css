@@ -1,0 +1,35 @@
+button {
+  font-weight: bolder;
+}
+
+.result {
+  color: azure;
+  background-color: darkgray;
+  border: 2px solid black;
+  text-align: right;
+}
+
+.clearCal,
+.masMenos,
+.porcentaje,
+.siete,
+.ocho,
+.nueve,
+.cuatro,
+.cinco,
+.seis,
+.uno,
+.dos,
+.tres,
+.cero,
+.punto {
+  background-color: lightslategray;
+}
+
+.division,
+.multiplicacion,
+.resta,
+.suma,
+.igual {
+  background-color: coral;
+}
