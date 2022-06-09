@@ -11,11 +11,11 @@ export default class MyCalculator extends React.PureComponent {
         <button type="button" className="clearCal">AC</button>
         <button type="button" className="masMenos">+/-</button>
         <button type="button" className="porcentaje">%</button>
-        <button type="button" className="division">/</button>
+        <button type="button" className="division">÷</button>
         <button type="button" className="siete">7</button>
         <button type="button" className="ocho">8</button>
         <button type="button" className="nueve">9</button>
-        <button type="button" className="multiplicacion">*</button>
+        <button type="button" className="multiplicacion">x</button>
         <button type="button" className="cuatro">4</button>
         <button button type="button" className="cinco">5</button>
         <button type="button" className="seis">6</button>

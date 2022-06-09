@@ -6,6 +6,7 @@ button {
   color: azure;
   background-color: darkgray;
   border: 2px solid black;
+  text-align: right;
 }
 
 .clearCal,
