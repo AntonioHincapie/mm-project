@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css';
-import MyCalculator from './components/calculator.js';
+import MyCalculator from './components/calculator';
 
 class App extends React.PureComponent {
   render() {
-    return <MyCalculator />
+    return <MyCalculator />;
   }
 }
 
