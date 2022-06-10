@@ -1,5 +1,11 @@
 button {
+  cursor: pointer;
   font-weight: bolder;
+  height: 4.5em;
+}
+
+button:active {
+  transform: translateY(4px);
 }
 
 .result {
@@ -7,6 +13,8 @@ button {
   background-color: darkgray;
   border: 2px solid black;
   text-align: right;
+  padding-right: 10px;
+  padding-top: 20px;
 }
 
 .clearCal,
