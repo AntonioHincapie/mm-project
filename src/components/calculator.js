@@ -27,14 +27,15 @@ export default class MyCalculator extends React.PureComponent {
     } else {
       resultado.textContent = 0;
     }
-  };
+  }
+
   render() {
     return (
       <div className="calculatorContainer">
         <div className="result">
           <p>0</p>
         </div>
-        <button type="button" className="clearCal" onClick={this.calc}>{`AC`}</button>
+        <button type="button" className="clearCal" onClick={this.calc}>AC</button>
         <button type="button" className="masMenos" onClick={this.calc}>+/-</button>
         <button type="button" className="porcentaje" onClick={this.calc}>%</button>
         <button type="button" className="division" onClick={this.calc}>÷</button>
