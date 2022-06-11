@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './calculator.css';
 import calculate from '../logic/calculate';
 
-export default function MyCalculator () {
+export default function MyCalculator() {
   const [input, setValue] = useState(0);
   const calc = (e) => {
     const valor = e.target.innerText;
