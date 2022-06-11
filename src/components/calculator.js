@@ -1,21 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './calculator.css';
 import calculate from '../logic/calculate';
 
-export default class MyCalculator extends React.PureComponent {
-  constructor(props) {
-    super(props);
-    this.state = {
-      initialCal: 0,
-    };
-    this.calc = this.calc.bind(this);
-  }
-
-  calc(e) {
+export default function MyCalculator() {
+  const [input, setValue] = useState(0);
+  const calc = (e) => {
     const valor = e.target.innerText;
-    const { initialCal } = this.state;
-    const result = calculate(initialCal, valor);
-    this.setState({ initialCal: result });
+    const result = calculate(input, valor);
+    setValue(result);
     const resultado = document.querySelector('.result');
 
     if (result.total === null && result.next !== null) {
@@ -27,34 +19,32 @@ export default class MyCalculator extends React.PureComponent {
     } else {
       resultado.textContent = 0;
     }
-  }
+  };
 
-  render() {
-    return (
-      <div className="calculatorContainer">
-        <div className="result">
-          <p>0</p>
-        </div>
-        <button type="button" className="clearCal" onClick={this.calc}>AC</button>
-        <button type="button" className="masMenos" onClick={this.calc}>+/-</button>
-        <button type="button" className="porcentaje" onClick={this.calc}>%</button>
-        <button type="button" className="division" onClick={this.calc}>÷</button>
-        <button type="button" className="siete" onClick={this.calc}>7</button>
-        <button type="button" className="ocho" onClick={this.calc}>8</button>
-        <button type="button" className="nueve" onClick={this.calc}>9</button>
-        <button type="button" className="multiplicacion" onClick={this.calc}>x</button>
-        <button type="button" className="cuatro" onClick={this.calc}>4</button>
-        <button type="button" className="cinco" onClick={this.calc}>5</button>
-        <button type="button" className="seis" onClick={this.calc}>6</button>
-        <button type="button" className="resta" onClick={this.calc}>-</button>
-        <button type="button" className="uno" onClick={this.calc}>1</button>
-        <button type="button" className="dos" onClick={this.calc}>2</button>
-        <button type="button" className="tres" onClick={this.calc}>3</button>
-        <button type="button" className="suma" onClick={this.calc}>+</button>
-        <button type="button" className="cero" onClick={this.calc}>0</button>
-        <button type="button" className="punto" onClick={this.calc}>.</button>
-        <button type="button" className="igual" onClick={this.calc}>=</button>
+  return (
+    <div className="calculatorContainer">
+      <div className="result">
+        <p>0</p>
       </div>
-    );
-  }
+      <button type="button" className="clearCal" onClick={calc}>AC</button>
+      <button type="button" className="masMenos" onClick={calc}>+/-</button>
+      <button type="button" className="porcentaje" onClick={calc}>%</button>
+      <button type="button" className="division" onClick={calc}>÷</button>
+      <button type="button" className="siete" onClick={calc}>7</button>
+      <button type="button" className="ocho" onClick={calc}>8</button>
+      <button type="button" className="nueve" onClick={calc}>9</button>
+      <button type="button" className="multiplicacion" onClick={calc}>x</button>
+      <button type="button" className="cuatro" onClick={calc}>4</button>
+      <button type="button" className="cinco" onClick={calc}>5</button>
+      <button type="button" className="seis" onClick={calc}>6</button>
+      <button type="button" className="resta" onClick={calc}>-</button>
+      <button type="button" className="uno" onClick={calc}>1</button>
+      <button type="button" className="dos" onClick={calc}>2</button>
+      <button type="button" className="tres" onClick={calc}>3</button>
+      <button type="button" className="suma" onClick={calc}>+</button>
+      <button type="button" className="cero" onClick={calc}>0</button>
+      <button type="button" className="punto" onClick={calc}>.</button>
+      <button type="button" className="igual" onClick={calc}>=</button>
+    </div>
+  );
 }
