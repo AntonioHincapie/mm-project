@@ -29,7 +29,7 @@ export default function MyCalculator() {
       </div>
       <div className="calculator-content">
         <div className="calculator-title">
-          <h1>Let's do some Math!</h1>
+          <h1>Let`s do some Math!</h1>
         </div>
         <div className="calculatorContainer">
           <div className="result">

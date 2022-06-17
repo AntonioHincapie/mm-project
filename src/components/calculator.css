@@ -13,15 +13,6 @@ button:active {
   gap: 4em;
 }
 
-.result {
-  color: azure;
-  background-color: darkgray;
-  border: 2px solid black;
-  text-align: right;
-  padding-right: 10px;
-  padding-top: 20px;
-}
-
 .clearCal,
 .masMenos,
 .porcentaje,
@@ -66,6 +57,12 @@ button:active {
 
 .result {
   grid-area: result;
+  color: azure;
+  background-color: darkgray;
+  border: 2px solid black;
+  text-align: right;
+  padding-right: 10px;
+  padding-top: 20px;
 }
 
 .clearCal {

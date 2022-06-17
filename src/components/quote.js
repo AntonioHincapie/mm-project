@@ -10,8 +10,9 @@ export default function Quote() {
       </div>
       <div className="quote-content">
         <p>
-          Mathematics is not about numbers, equations, computations, or algorithms: it is about 
-          understanding. <strong>-William Paul Thurston</strong>
+          Mathematics is not about numbers, equations, computations, or algorithms: it is about
+          understanding.
+          <strong>-William Paul Thurston</strong>
         </p>
       </div>
     </div>
