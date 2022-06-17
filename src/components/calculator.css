@@ -8,13 +8,9 @@ button:active {
   transform: translateY(4px);
 }
 
-.result {
-  color: azure;
-  background-color: darkgray;
-  border: 2px solid black;
-  text-align: right;
-  padding-right: 10px;
-  padding-top: 20px;
+.calculator-content {
+  display: flex;
+  gap: 4em;
 }
 
 .clearCal,
@@ -40,4 +36,107 @@ button:active {
 .suma,
 .igual {
   background-color: coral;
+}
+
+.calculatorContainer {
+  width: 70%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 2px 2px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "result result result result"
+    "clearCal masMenos porcentaje division"
+    "siete ocho nueve multiplicacion"
+    "cuatro cinco seis resta"
+    "uno dos tres suma"
+    "cero cero punto igual";
+  text-align: center;
+}
+
+.result {
+  grid-area: result;
+  color: azure;
+  background-color: darkgray;
+  border: 2px solid black;
+  text-align: right;
+  padding-right: 10px;
+  padding-top: 20px;
+}
+
+.clearCal {
+  grid-area: clearCal;
+}
+
+.masMenos {
+  grid-area: masMenos;
+}
+
+.porcentaje {
+  grid-area: porcentaje;
+}
+
+.division {
+  grid-area: division;
+}
+
+.siete {
+  grid-area: siete;
+}
+
+.ocho {
+  grid-area: ocho;
+}
+
+.nueve {
+  grid-area: nueve;
+}
+
+.multiplicacion {
+  grid-area: multiplicacion;
+}
+
+.cuatro {
+  grid-area: cuatro;
+}
+
+.cinco {
+  grid-area: cinco;
+}
+
+.seis {
+  grid-area: seis;
+}
+
+.resta {
+  grid-area: resta;
+}
+
+.uno {
+  grid-area: uno;
+}
+
+.dos {
+  grid-area: dos;
+}
+
+.tres {
+  grid-area: tres;
+}
+
+.suma {
+  grid-area: suma;
+}
+
+.cero {
+  grid-area: cero;
+}
+
+.punto {
+  grid-area: punto;
+}
+
+.igual {
+  grid-area: igual;
 }

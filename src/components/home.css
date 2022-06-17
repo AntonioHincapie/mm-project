@@ -1,0 +1,13 @@
+.home-content {
+  padding: 0 3%;
+}
+
+.home-content h1 {
+  font-size: 35px;
+  font-style: italic;
+}
+
+.home-content p {
+  font-size: 18px;
+  font-weight: bold;
+}
