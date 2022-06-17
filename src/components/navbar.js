@@ -4,11 +4,11 @@ import './navbar.css';
 
 export default function NavBar() {
   return (
-    <div className='navbar'>
+    <div className="navbar">
       <div>
         <h1>Math Magiciants</h1>
       </div>
-      <nav className='navlinks'>
+      <nav className="navlinks">
         <Link to="/">Home</Link>
         <Link to="/calculate">Calculator</Link>
         <Link to="/quote">Quote</Link>

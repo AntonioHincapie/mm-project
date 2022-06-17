@@ -24,11 +24,11 @@ export default function MyCalculator() {
 
   return (
     <div>
-      <div className='nav'>
+      <div className="nav">
         <NavBar />
       </div>
-      <div className='calculator-content'>
-        <div className='calculator-title'>
+      <div className="calculator-content">
+        <div className="calculator-title">
           <h1>Let's do some Math!</h1>
         </div>
         <div className="calculatorContainer">
