@@ -1,5 +1,6 @@
 import React from 'react';
 import NavBar from './navbar';
+import './quote.css';
 
 export default function Quote() {
   return (
