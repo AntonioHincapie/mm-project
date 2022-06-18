@@ -35,6 +35,10 @@ Webpack modules for Lodash, HTML Plugin, Web Server, Style, Local Linters from M
 
 [Math-Magiciants](https://antoniohincapie.github.io/mm-project/)
 
+[Math-Magiciants (Heroku)](https://math-magicians-antonio.herokuapp.com/)
+
+[Math-Magiciants (Netlify)](https://mat-magiciants-antonioh.netlify.app/)
+
 ## Source
 
 [Math-Magicians](https://github.com/AntonioHincapie/mm-project)
